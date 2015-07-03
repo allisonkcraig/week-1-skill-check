@@ -21,14 +21,13 @@ def all_odd(number_list):
         []
 
     """
-    new_number_list = []
+    new_number_list = [] 
 
     for num in number_list:
         if num % 2 != 0:
             new_number_list.append(num)
 
     return new_number_list
-
 
 
 def all_even(number_list):
@@ -271,16 +270,16 @@ def advanced_join_strings(list_of_words):
         'Pretzel'
 
     """
-    comma_string = ""
-    if len(list_of_words) > 1:
+    
+    if len(list_of_words) > 1: #Checks that the list is more than one item
+        concatenated_with_comma_string = ""
         for word in list_of_words:
-            comma_string += word
-            if word != list_of_words[-1]:
-                comma_string += ", "
-        return comma_string
+            concatenated_with_comma_string += word
+            if word != list_of_words[-1]: #I want to make sure the there isn't a comma after the last item of the list.
+                concatenated_with_comma_string += ", "
+        return concatenated_with_comma_string
     else:
-
-        return list_of_words[0]
+        return list_of_words[0] #Returns the single word.
 
 
 ##############################################################################
